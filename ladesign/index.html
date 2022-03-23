@@ -12,24 +12,28 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="#" class="header__logo-link">
-                    <img src="img/logo.svg" alt="logo" class="header__logo-img">
-                </a>
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="img/logo.svg" alt="logo" class="header__logo-img">
+                    </a>
+                </div>
                 <nav class="nav">
                     <a href="" class="nav__links">Протфолио</a>
                     <a href="" class="nav__links">услуги и цены</a>
                     <a href="" class="nav__links">контакты</a>
                 </nav>
-                <div class="header__block">
-                    <img src="img/phone.svg" alt="phone">
-                    <a href="#" class="header__phone">+7 918 412-34-43</a>
+                <div class="header__item">
+                    <div class="header__block">
+                        <img src="img/phone.svg" alt="phone">
+                        <a href="#" class="header__phone">+7 918 412-34-43</a>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
     </header>
     <section class="main">
@@ -44,12 +48,12 @@
             </div>
         </div>
     </section>
-    <!-- <section class="advantages">
+    <section class="advantages">
         <div class="container">
-            <h2 class="title advantages__title">Наша команда дает уверенность</h2>
             <div class="advantages__wrapper">
+                <h2 class="title advantages__title">Наша команда дает уверенность</h2>
                 <div class="advantages__item">
-                    <h3 class="subtitle subtitle_mb50">
+                    <h3 class="subtitle advantages__subtitle">
                         Дизайн-проект от студии LA Design не только совершенен по дизайну, но и реализуем
                     </h3>
                     <div class="advantages__block">
@@ -78,8 +82,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="portfolio">
+    </section>
+    <section class="portfolio">
         <div class="container">
             <h2 class="title">Портфолио</h2>
             <ul class="portfolio__menu">
@@ -134,8 +138,8 @@
                 <img src="img/portfolio/applic__arrow.svg" alt="application__arrow">
             </a>
         </div>
-    </section> -->
-    <!-- <footer class="footer">
+    </section>
+    <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <a href="" class="footer__link">houzz</a>
@@ -144,6 +148,50 @@
             </div>
             <div class="footer__text">© 2022 LA Design, all rights reserved.</div>
         </div>
-    </footer> -->
+    </footer>
+
+
+    <!-- Модальные окна на странице -->
+
+    <div class="overlay">
+        <div class="modal modal__contacts">
+            <div class="modal__close"><img src="icons/close.svg" alt="close"></div>
+            <h3 class="title title_fz30 modal__contacts-title">
+                оставЬТЕ СВОИ КОНТАКТЫ. мЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ
+            </h3>
+            <form action="#" class="form modal__contacts-form">
+                <input required placeholder="Имя" type="name" class="form__info">
+                <input required placeholder="Ваш телефон" type="phone" class="form__info">
+            </form>
+            <div class="modal__contacts-submit">
+                <button class="button button__modal modal__contacts-btn">
+                    <div>Отправить</div>
+                    <img src="img/submit__arrow.svg" alt="submit__arrow" class="form__arrow">
+                </button>
+                <div class="modal__policy">
+                    Нажимая на кнопку, я даю
+                    <a href="#" class="modal__policy-link">согласие на обработку персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="overlay">
+        <div class="modal thanks__modal">
+            <div class="modal__close"><img src="icons/close.svg" alt="close"></div>
+            <div class="thanks__wrapper">
+                <img src="icons/submit.svg" alt="submit__icon" class="thanks__icon">
+                <h2 class="title title_fz30">Ваша Заявка успешно отправлена</h2>
+                <h3 class="thanks__descr">Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</h3>
+                <div class="thanks__social">
+                    <a href="" class="thanks__link">houzz</a>
+                    <a href="" class="thanks__link">facebook</a>
+                    <a href="" class="thanks__link">vkontakte</a>
+                    <a href="" class="thanks__link">instagram</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
 </body>
 </html>

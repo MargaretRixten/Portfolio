@@ -1,0 +1,77 @@
+.overlay
+    position: fixed
+    top: 0
+    background: rgba(0, 0, 0, 0.6)
+    width: 100%
+    height: 100%
+    z-index: 5
+.modal
+    position: relative
+    background: #fff
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 5
+    &__close
+        position: absolute
+        top: -35px
+        right: 0
+    &__contacts
+        padding: 50px 50px
+        width: 800px
+        height: 360px
+        &-title
+            text-align: left
+        &-form
+            margin-top: 30px
+            display: flex
+            align-items: center
+            gap: 30px
+        &-submit
+            margin-top: 40px
+            display: flex
+            align-items: center
+            gap: 34px
+        &-btn
+          display: flex
+          justify-content: center
+          gap: 10px
+          width: 228px
+          height: 60px  
+    &__policy
+        max-width: 309px
+        font-weight: 400
+        font-size: 13px
+        color: #878787
+        &-link
+            color: #878787
+.thanks
+    &__modal
+        padding: 50px 120px
+        width: 607px
+        height: 394px
+    &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: center
+        gap: 20px
+    &__descr
+        font-weight: 300
+        font-size: 16px
+        line-height: 24px
+        text-align: center
+        color: #777777
+    &__social
+        margin-top: 20px
+        display: flex
+        align-items: center
+        gap: 30px
+    &__link
+        text-decoration: none
+        font-size: 14px
+        line-height: 16px
+        letter-spacing: 0.15em
+        text-transform: uppercase
+        color: #878787
