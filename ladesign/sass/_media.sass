@@ -1,4 +1,7 @@
 @media (max-width: 991px)
+    .header
+        &__block
+            margin: 0
     .advantages
         padding: 70px 0
         &__title
@@ -11,6 +14,13 @@
             grid-template-rows: 94px minmax(528px, auto)
             grid-template-columns: minmax(auto, 678px)
             row-gap: 30px
+    .contacts
+        &__modal
+            width: 600px
+            height: 404px
+    .form
+        &__info
+            width: 214px
     .portfolio
         &__wrapper
             justify-content: center
@@ -27,6 +37,20 @@
 @media (max-width: 767px)
     .nav
         display: none
+        position: absolute
+        background: rgba(0, 0, 0, 0.96)
+        height: 100vh
+        width: 100%
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        flex-direction: column
+        z-index: -1
+        &__links
+            font-size: 20px
+            line-height: 125%
+            letter-spacing: 0.08em
+
     .hamburger
         display: block
     .layout
@@ -49,6 +73,41 @@
         &__title
             font-size: 28px
             line-height: 40px
+    .portfolio
+        &__wrapper
+            grid-template-columns: 290px
+        &__horizontal1, &__horizontal2
+            display: none
+        &__bigsquare
+            grid-row: unset
+            grid-column: unset
+        &__application
+            font-size: 35px
+    .contacts
+        &__modal
+            padding: 15px 13px
+            width: 400px
+            height: 440px
+        &__form
+            flex-direction: column
+        &__submit
+            flex-direction: column
+            align-items: flex-start
+        &__btn
+            width: 100%
+    .form
+        &__info
+            width: 100%
+    .thanks
+        &__modal
+            padding: 70px 25px
+            width: 400px
+            height: 430px
+        &_dn768
+            display: none
+    .title_fz30
+        font-size: 20px
+        line-height: 125%
 
 @media (max-width: 575px)
     .layout
@@ -75,17 +134,30 @@
             grid-template-columns: 1fr
         &__title
             line-height: 36px
+            &-mw210
+                max-width: 137px
         &__subtitle
             font-size: 13px
+        &__descr
+            padding-right: 5px
     .title_fz20
         font-size: 13px
     .portfolio
-        &__wrapper
-            grid-template-columns: 290px
-        &__horizontal1, &__horizontal2
-            display: none
-        &__bigsquare
-            grid-row: unset
-            grid-column: unset
+        padding-bottom: 70px
         &__application
+            margin-top: 75px
             font-size: 16px
+            max-width: 290px
+            img
+                top: 4px
+                width: 9px
+                height: 9px
+    .contacts
+        &__modal
+            width: 290px
+
+    .thanks
+        &__modal
+            padding: 30px 11px
+            width: 260px
+            height: 330px

@@ -1,4 +1,5 @@
 .overlay
+    display: none
     position: fixed
     top: 0
     background: rgba(0, 0, 0, 0.6)
@@ -17,28 +18,6 @@
         position: absolute
         top: -35px
         right: 0
-    &__contacts
-        padding: 50px 50px
-        width: 800px
-        height: 360px
-        &-title
-            text-align: left
-        &-form
-            margin-top: 30px
-            display: flex
-            align-items: center
-            gap: 30px
-        &-submit
-            margin-top: 40px
-            display: flex
-            align-items: center
-            gap: 34px
-        &-btn
-          display: flex
-          justify-content: center
-          gap: 10px
-          width: 228px
-          height: 60px  
     &__policy
         max-width: 309px
         font-weight: 400
@@ -46,6 +25,29 @@
         color: #878787
         &-link
             color: #878787
+.contacts
+    &__modal
+        padding: 50px 50px
+        width: 800px
+        height: 360px
+    &__title
+        text-align: left
+    &__form
+        margin-top: 30px
+        display: flex
+        align-items: center
+        gap: 30px
+    &__submit
+        margin-top: 40px
+        display: flex
+        align-items: center
+        gap: 34px
+    &__btn
+        display: flex
+        justify-content: center
+        gap: 10px
+        width: 228px
+        height: 60px  
 .thanks
     &__modal
         padding: 50px 120px

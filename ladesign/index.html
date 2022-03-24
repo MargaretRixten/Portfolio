@@ -56,25 +56,51 @@
                     <h3 class="subtitle advantages__subtitle">
                         Дизайн-проект от студии LA Design не только совершенен по дизайну, но и реализуем
                     </h3>
-                    <div class="advantages__block">
-                        <h4 class="title title_fz20">Каждый проект уникален</h4>
-                        <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                    <div class="advantages__inner">
+                        <div class="advantages__block">
+                            <h4 class="title title_fz20">Каждый проект уникален</h4>
+                            <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                        </div>
+                        <div class="advantages__descr">
+                            Дизайнеры и архитекторы студии не работают по шаблону, 
+                            учитывают все пожелания и не копируют работы из чужих портфолио
+                        </div>
                     </div>
-                    <div class="advantages__block">
-                        <h4 class="title title_fz20">Полное сопровождение</h4>
-                        <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                    <div class="advantages__inner">
+                        <div class="advantages__block">
+                            <h4 class="title title_fz20">Полное сопровождение</h4>
+                            <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                        </div>
+                        <div class="advantages__descr">
+                            Клиент может заказать услугу по авторскому надзору и вообще не приезжать на объект. Мы будем контролировать и корректировать ход выполнения ремонтных работ согласно дизайн-проекту
+                        </div>
                     </div>
-                    <div class="advantages__block">
-                        <h4 class="title title_fz20">Согласование перепланировки</h4>
-                        <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                    <div class="advantages__inner">
+                        <div class="advantages__block">
+                            <h4 class="title title_fz20">Согласование перепланировки</h4>
+                            <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                        </div>
+                        <div class="advantages__descr">
+                            Поможем согласовать любые планировочные решения, которые не противоречат закону. Возьмем на себя все бумажные вопросы, чтобы освободить ваше время
+                        </div>
                     </div>
-                    <div class="advantages__block">
-                        <h4 class="title title_fz20">Техническая документация</h4>
-                        <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                    <div class="advantages__inner">
+                        <div class="advantages__block">
+                            <h4 class="title title_fz20">Техническая документация</h4>
+                            <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                        </div>
+                        <div class="advantages__descr">
+                            Готовим полный пакет документов, который гарантирует ответственный подход к работе и высокое качество реализованного дизайн-проекта
+                        </div>
                     </div>
-                    <div class="advantages__block">
-                        <h4 class="title title_fz20">Строгая политика <br> конфиденциальности</h4>
-                        <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                    <div class="advantages__inner">
+                        <div class="advantages__block">
+                            <h4 class="title title_fz20 advantages__title-mw210">Строгая политика конфиденциальности</h4>
+                            <img src="icons/arrow_down.png" alt="arrow_down" class="advantages__arrows">
+                        </div>
+                        <div class="advantages__descr">
+                            Обеспечиваем защиту персональных данных заказчиков и не раскрываем их третьим лицам.
+                        </div>
                     </div>
                 </div>
                 <div class="advantages__item">
@@ -83,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <!-- <section class="portfolio">
         <div class="container">
             <h2 class="title">Портфолио</h2>
             <ul class="portfolio__menu">
@@ -138,8 +164,8 @@
                 <img src="img/portfolio/applic__arrow.svg" alt="application__arrow">
             </a>
         </div>
-    </section>
-    <footer class="footer">
+    </section> -->
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <a href="" class="footer__link">houzz</a>
@@ -148,23 +174,23 @@
             </div>
             <div class="footer__text">© 2022 LA Design, all rights reserved.</div>
         </div>
-    </footer>
+    </footer> -->
 
 
     <!-- Модальные окна на странице -->
 
     <div class="overlay">
-        <div class="modal modal__contacts">
+        <div class="modal contacts__modal">
             <div class="modal__close"><img src="icons/close.svg" alt="close"></div>
-            <h3 class="title title_fz30 modal__contacts-title">
+            <h3 class="title title_fz30 contacts__title">
                 оставЬТЕ СВОИ КОНТАКТЫ. мЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ
             </h3>
-            <form action="#" class="form modal__contacts-form">
+            <form action="#" class="form contacts__form">
                 <input required placeholder="Имя" type="name" class="form__info">
                 <input required placeholder="Ваш телефон" type="phone" class="form__info">
             </form>
-            <div class="modal__contacts-submit">
-                <button class="button button__modal modal__contacts-btn">
+            <div class="contacts__submit">
+                <button class="button button__modal contacts__btn">
                     <div>Отправить</div>
                     <img src="img/submit__arrow.svg" alt="submit__arrow" class="form__arrow">
                 </button>
@@ -176,7 +202,7 @@
         </div>
     </div>
 
-    <!-- <div class="overlay">
+    <div class="overlay">
         <div class="modal thanks__modal">
             <div class="modal__close"><img src="icons/close.svg" alt="close"></div>
             <div class="thanks__wrapper">
@@ -185,13 +211,13 @@
                 <h3 class="thanks__descr">Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</h3>
                 <div class="thanks__social">
                     <a href="" class="thanks__link">houzz</a>
-                    <a href="" class="thanks__link">facebook</a>
-                    <a href="" class="thanks__link">vkontakte</a>
+                    <a href="" class="thanks__link thanks_dn768">facebook</a>
+                    <a href="" class="thanks__link thanks_dn768">vkontakte</a>
                     <a href="" class="thanks__link">instagram</a>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </body>
 </html>
