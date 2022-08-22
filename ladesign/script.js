@@ -36,6 +36,31 @@ application.addEventListener('click', (e) => {
     contactsModal.parentNode.style.display = 'block';
 });
 
+
+const contactsButton = document.querySelector('.contacts__btn'),
+      thanksModal = document.querySelector('.thanks__modal');
+
+contactsButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    contactsButton.parentNode.parentNode.style.display = 'none';
+    contactsButton.parentNode.parentNode.parentNode.style.display = 'none';
+    thanksModal.style.display = 'block';
+    thanksModal.parentNode.style.display = 'block';
+
+})
+
 // Закрытие модалки по крестику
 
+const closeModal = document.querySelectorAll('.modal__close');
 
+closeModal.forEach((item) => {
+    item.addEventListener('click', () => {
+        item.parentNode.style.display = 'none';
+        item.parentNode.parentNode.style.display = 'none';
+    })
+})
+
+// Табы портфолио
+
+const tabItem = document.querySelectorAll('.portfolio__item-link'),
+      tabBlock = document.querySelectorAll('.portfolio__wrapper');
